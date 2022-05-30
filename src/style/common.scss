@@ -23,6 +23,13 @@ a:hover {
     color: $accent-color;
 }
 
+.small-title {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: $title-grey;
+    letter-spacing: .2rem;
+}
+
 // Components
 .ms_btn {
     padding: .6rem 1.2rem;

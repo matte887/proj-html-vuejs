@@ -75,7 +75,7 @@ export default {
 
     .ms_jumbotron {
         width: 100%;
-        height: 60vh;
+        height: 75vh;
         background-image: url(../assets/images/Selected/home_slider_bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
