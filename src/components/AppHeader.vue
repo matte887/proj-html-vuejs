@@ -12,7 +12,7 @@
       >
         <img
           class="ms_logo"
-          src="../assets/images/Selected/logo-2x.png"
+          src="../assets/images/selected/logo-2x.png"
           alt=""
         />
         <nav class="d-flex align-items-center">
@@ -64,6 +64,7 @@ export default {
     color: $white-shade;
     .ms_logo {
         height: 60%;
+        width: auto;
     }
     nav {
         width: 70%;
@@ -76,7 +77,7 @@ export default {
     .ms_jumbotron {
         width: 100%;
         height: 75vh;
-        background-image: url(../assets/images/Selected/home_slider_bg.jpg);
+        background-image: url(../assets/images/selected/home_slider_bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
