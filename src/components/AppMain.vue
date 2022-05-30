@@ -35,6 +35,18 @@
         </div>
       </div>
     </section>
+
+    <section class="ms_featured">
+      <div class="container">
+        <h5 class="ms_small-title mb-3" id="featured-white">Featured article</h5>
+        <h3 class="ms_h3-title">Cras malesuada et orci eget pharetra</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eligendi sint atque sapiente praesentium fuga recusandae cum dolore consequuntur esse.</p>
+        <a href="" class="ms_btn ms_dark-btn">
+          Read more
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -85,6 +97,27 @@ export default {
     p span {
       color: initial;
       font-weight: 500;
+    }
+  }
+}
+
+.ms_featured {
+  color: $white-shade;
+  margin-top: 4rem;
+  .container {
+    background-image: url(../assets/images/selected/featured_article_1_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 17rem 7rem 7rem 7rem;
+    #featured-white {
+      color:$white-shade;
+    }
+    p {
+      margin-bottom: 3rem;
+    }
+    .ms_btn {
+      padding: 1rem 3rem;
     }
   }
 }
