@@ -279,6 +279,13 @@
         </div>
       </div>
     </section>
+
+    <section class="ms_go-to-forum">
+      <a class="cta">
+        Go to our forum
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </a>
+    </section>
   </main>
 </template>
 
@@ -371,6 +378,7 @@ export default {
 }
 
 .ms_reviews-tutorials {
+  margin: 6rem 0;
   .ms_reviewed {
     color: $white-shade;
     background-image: url(../assets/images/selected/featured_article_2_bg.jpg);
@@ -392,8 +400,8 @@ export default {
   }
 }
 
-.ms_read-blog {
-  margin-top: 6rem;
+.ms_read-blog,
+.ms_go-to-forum {
   color: $white-shade;
   text-transform: uppercase;
   padding: 4rem 0;
