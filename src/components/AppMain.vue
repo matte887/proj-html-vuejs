@@ -212,68 +212,12 @@
       <h3 class="ms_h3-title">Forum Sections</h3>
       <div class="container">
         <div class="row row-cols-4 g-5">
-          <div class="col">
+          <div class="col" v-for="(item, index) in forumSection" :key="index">
             <a class="ms_forum-sections-card">
               <div class="ms_forum-sections-icon">
-                <i class="fa-solid fa-file-lines"></i>
+                <i :class="item.icon"></i>
               </div>
-              <h4>News & Community</h4>
-            </a>
-          </div>
-          <div class="col">
-            <a class="ms_forum-sections-card">
-              <div class="ms_forum-sections-icon">
-                <i class="fa-solid fa-file-lines"></i>
-              </div>
-              <h4>Apple Forum</h4>
-            </a>
-          </div>
-          <div class="col">
-            <a class="ms_forum-sections-card">
-              <div class="ms_forum-sections-icon">
-                <i class="fa-solid fa-file-lines"></i>
-              </div>
-              <h4>Microsoft Forum</h4>
-            </a>
-          </div>
-          <div class="col">
-            <a class="ms_forum-sections-card">
-              <div class="ms_forum-sections-icon">
-                <i class="fa-solid fa-file-lines"></i>
-              </div>
-              <h4>Android Forum</h4>
-            </a>
-          </div>
-          <div class="col">
-            <a class="ms_forum-sections-card">
-              <div class="ms_forum-sections-icon">
-                <i class="fa-solid fa-file-lines"></i>
-              </div>
-              <h4>General Discussion</h4>
-            </a>
-          </div>
-          <div class="col">
-            <a class="ms_forum-sections-card">
-              <div class="ms_forum-sections-icon">
-                <i class="fa-solid fa-file-lines"></i>
-              </div>
-              <h4>Apps & Software</h4>
-            </a>
-          </div>
-          <div class="col">
-            <a class="ms_forum-sections-card">
-              <div class="ms_forum-sections-icon">
-                <i class="fa-solid fa-file-lines"></i>
-              </div>
-              <h4>Gadget & Stuff</h4>
-            </a>
-          </div>
-          <div class="col">
-            <a class="ms_forum-sections-card">
-              <div class="ms_forum-sections-icon">
-                <i class="fa-solid fa-file-lines"></i>
-              </div>
-              <h4>Tutorials & Guides</h4>
+              <h4>{{item.title}}</h4>
             </a>
           </div>
         </div>
@@ -316,6 +260,44 @@
 <script>
 export default {
   name: "AppMain",
+  data() {
+    return {
+      forumSection: [
+        {
+          icon: 'fa-solid fa-file-lines', 
+          title: 'News & Community'
+        },
+        {
+          icon: 'fa-brands fa-apple',
+          title: 'Apple Forum'
+        },
+        {
+          icon: 'fa-brands fa-windows',
+          title: 'Microsoft Forum'
+        },
+        {
+          icon: 'fa-brands fa-android',
+          title: 'Android Forum'
+        },
+        {
+          icon: 'fa-solid fa-mug-saucer',
+          title: 'General Discussion'
+        },
+        {
+          icon: 'fa-solid fa-cubes',
+          title: 'Apps & Software'
+        },
+        {
+          icon: 'fas fa-laptop',
+          title: 'Gadget & Stuff'
+        },
+        {
+          icon: 'fa-solid fa-wrench',
+          title: 'Tutorials & Guides'
+        }
+      ]
+    }
+  }
 };
 </script>
 
