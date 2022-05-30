@@ -191,6 +191,13 @@
         </div>
       </div>
     </section>
+
+    <section class="ms_read-blog">
+      <a class="cta">
+        Read our blog
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </a>
+    </section>
   </main>
 </template>
 
@@ -301,6 +308,24 @@ export default {
     width: 30%;
     height: auto;
     margin-right: 1rem;
+  }
+}
+
+.ms_read-blog {
+  margin: 6rem 0;
+  color: $white-shade;
+  text-transform: uppercase;
+  padding: 4rem 0;
+  text-align: center;
+  background-color: $background-dark;
+
+  a {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  a i {
+    padding: 0 1rem;
   }
 }
 </style>
