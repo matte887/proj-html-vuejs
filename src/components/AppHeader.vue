@@ -4,12 +4,7 @@
           <img class="ms_logo" src="../assets/images/Selected/logo-2x.png" alt="">
           <nav class="d-flex align-items-center">
               <ul class="d-flex align-items-center justify-content-around flex-grow-1">
-                  <li><a href="">ciao</a></li>
-                  <li><a href="">ciao</a></li>
-                  <li><a href="">ciao</a></li>
-                  <li><a href="">ciao</a></li>
-                  <li><a href="">ciao</a></li>
-                  <li><a href="">ciao</a></li>
+                  <li v-for="(item, index) in navItems" :key="index"><a href="">{{item}}</a></li>
               </ul>
               <a class="ms_dark-button me-5" href="">Join Us</a>
               <div class="ms_search">
@@ -23,6 +18,9 @@
 <script>
 export default {
     name: 'AppHeader',
+    props: {
+        navItems: Array
+    }
 }
 </script>
 

@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: $accent-color;
+}
+
 // Components
 .ms_dark-button {
     padding: .6rem 1.2rem;

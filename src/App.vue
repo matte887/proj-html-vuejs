@@ -2,7 +2,7 @@
   <div id="app">
     
     <!-- header + jumbotron -->
-    <AppHeader />
+    <AppHeader :navItems = 'headerMenu' />
     <!-- /header + jumbotron -->
 
     <!-- Main -->
@@ -27,6 +27,11 @@ export default {
     AppHeader,
     AppMain,
     AppFooter
+  },
+  data() {
+    return {
+      headerMenu: ['Home', 'Apple', 'Microsoft', 'Android', 'Forums', 'Contact us']
+    }
   }
 }
 </script>
