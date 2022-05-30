@@ -23,16 +23,21 @@
               <a href="">{{ item }}</a>
             </li>
           </ul>
-          <a class="ms_dark-button me-5" href="">Join Us</a>
+          <a class="ms_btn ms_dark-btn me-5" href="">Join Us</a>
           <div class="ms_search">
             <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
         </nav>
       </div>
     </header>
-    <div class="ms_jumbotron">
+    <div class="ms_jumbotron d-flex align-items-center">
         <div class="container">
-            <h1>Jumbotron!</h1>
+            <h1>Tech Forum!</h1>
+            <h3 class="mb-5">Discuss all the latest technology new and trends</h3>
+            <a class="ms_btn ms_primary-btn" href="">
+                Get Avada Now!
+                <i class="fa-solid fa-angle-right"></i>
+            </a>
         </div>
     </div>
   </div>
@@ -50,28 +55,39 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-
-header {
-  width: 100%;
-  height: $header-height;
-  background-color: $brand-primary-color;
-  color: $white-shade;
-  .ms_logo {
-    height: 60%;
-  }
-  nav {
-    width: 70%;
-    ul {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.ms_jumbotron {
+.ms_header-container {
+    color: $white-shade;
+    header {
     width: 100%;
-    height: 60vh;
-    background-image: url(../assets/images/Selected/home_slider_bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    height: $header-height;
+    background-color: $brand-primary-color;
+    color: $white-shade;
+    .ms_logo {
+        height: 60%;
+    }
+    nav {
+        width: 70%;
+        ul {
+        margin-bottom: 0;
+        }
+    }
+    }
+
+    .ms_jumbotron {
+        width: 100%;
+        height: 60vh;
+        background-image: url(../assets/images/Selected/home_slider_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        h1 {
+            font-size: 8rem;
+            font-weight: 700;
+        }
+        h3 {
+            font-weight: 400;
+        }
+    }
 }
 </style>

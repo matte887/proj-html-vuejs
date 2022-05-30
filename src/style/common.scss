@@ -24,10 +24,18 @@ a:hover {
 }
 
 // Components
-.ms_dark-button {
+.ms_btn {
     padding: .6rem 1.2rem;
     border-radius: 2px;
-    background-color: $dividers-buttons;
     text-transform: uppercase;
     font-weight: 700;
+} 
+
+.ms_dark-btn {
+    background-color: $dividers-buttons;
+}
+
+.ms_primary-btn {
+    letter-spacing: 0.1rem;
+    background-color: $brand-primary-color;
 }
