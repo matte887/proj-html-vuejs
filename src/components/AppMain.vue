@@ -1,12 +1,12 @@
 <template>
   <main>
-      
+      <p>Main</p>
   </main>
 </template>
 
 <script>
 export default {
-    name: AppMain,
+    name: 'AppMain',
 }
 </script>
 
