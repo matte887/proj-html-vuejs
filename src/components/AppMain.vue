@@ -153,7 +153,15 @@
           </div>
           <div class="col-4 d-flex flex-column">
             <h4 class="feat-title">Tutorials & Guides</h4>
-            <div class="ms_tutorial-guides-wrapper d-flex flex-column justify-content-around flex-grow-1">
+            <div
+              class="
+                ms_tutorial-guides-wrapper
+                d-flex
+                flex-column
+                justify-content-around
+                flex-grow-1
+              "
+            >
               <div class="d-flex">
                 <img
                   src="../assets/images/selected/post_feat_img_23-177x142.jpg"
@@ -197,6 +205,79 @@
         Read our blog
         <i class="fa-solid fa-arrow-right-long"></i>
       </a>
+    </section>
+
+    <section class="ms_forum-sections">
+      <h5 class="ms_small-title mb-3">Phasellus eget metus</h5>
+      <h3 class="ms_h3-title">Forum Sections</h3>
+      <div class="container">
+        <div class="row row-cols-4 g-5">
+          <div class="col">
+            <a class="ms_forum-sections-card">
+              <div class="ms_forum-sections-icon">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h4>News & Community</h4>
+            </a>
+          </div>
+          <div class="col">
+            <a class="ms_forum-sections-card">
+              <div class="ms_forum-sections-icon">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h4>Apple Forum</h4>
+            </a>
+          </div>
+          <div class="col">
+            <a class="ms_forum-sections-card">
+              <div class="ms_forum-sections-icon">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h4>Microsoft Forum</h4>
+            </a>
+          </div>
+          <div class="col">
+            <a class="ms_forum-sections-card">
+              <div class="ms_forum-sections-icon">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h4>Android Forum</h4>
+            </a>
+          </div>
+          <div class="col">
+            <a class="ms_forum-sections-card">
+              <div class="ms_forum-sections-icon">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h4>General Discussion</h4>
+            </a>
+          </div>
+          <div class="col">
+            <a class="ms_forum-sections-card">
+              <div class="ms_forum-sections-icon">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h4>Apps & Software</h4>
+            </a>
+          </div>
+          <div class="col">
+            <a class="ms_forum-sections-card">
+              <div class="ms_forum-sections-icon">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h4>Gadget & Stuff</h4>
+            </a>
+          </div>
+          <div class="col">
+            <a class="ms_forum-sections-card">
+              <div class="ms_forum-sections-icon">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h4>Tutorials & Guides</h4>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </template>
@@ -312,7 +393,7 @@ export default {
 }
 
 .ms_read-blog {
-  margin: 6rem 0;
+  margin-top: 6rem;
   color: $white-shade;
   text-transform: uppercase;
   padding: 4rem 0;
@@ -323,9 +404,44 @@ export default {
     font-size: 1.2rem;
     font-weight: 700;
   }
-  
+
   a i {
     padding: 0 1rem;
+  }
+}
+
+.ms_forum-sections {
+  padding: 8rem 0;
+  text-align: center;
+  background-color: $background-grey;
+  h3:after {
+    width: 5rem;
+    height: 2px;
+    content: "";
+    display: block;
+    margin: 3rem auto;
+    background-color: $accent-color;
+  }
+
+  &-card {
+    display: block;
+    background-color: $white-shade;
+    border-top: 3px solid $brand-primary-color;
+    padding: 2rem 0;
+    h4 {
+      margin: 1rem 0;
+    }
+  }
+
+  &-icon {
+    color: $white-shade;
+    font-size: 2rem;
+    background-color: $accent-color;
+    border-radius: 50%;
+    padding: 1rem;
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
   }
 }
 </style>
