@@ -286,6 +286,20 @@
         <i class="fa-solid fa-arrow-right-long"></i>
       </a>
     </section>
+
+    <section class="ms_join-community">
+      <div class="ms_join-community-container">
+        <h2>Hey! Join to our Community</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt at
+          repellendus earum beatae quasi cumque porro.
+        </p>
+        <a class="ms_btn ms_primary-btn" href="">
+          Sign up
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -450,6 +464,35 @@ export default {
     display: inline-block;
     width: 5rem;
     height: 5rem;
+  }
+}
+
+.ms_join-community {
+  text-align: center;
+  color: $white-shade;
+  background-image: url(../assets/images/selected/join_now_cta_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+
+  &-container {
+    width: 25%;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+    }
+
+    .ms_btn {
+      padding: 1rem 2.5rem;
+    }
   }
 }
 </style>
