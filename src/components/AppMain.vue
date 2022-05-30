@@ -300,6 +300,16 @@
         </a>
       </div>
     </section>
+
+    <section class="ms_join-newsletter">
+      <div class="container">
+        <h3>Subscribe to our Newsletter</h3>
+        <form action="">
+          <input type="text" placeholder="Insert your email*" />
+          <a href="" class="ms_btn ms_dark-btn">Send</a>
+        </form>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -492,6 +502,31 @@ export default {
 
     .ms_btn {
       padding: 1rem 2.5rem;
+    }
+  }
+}
+
+.ms_join-newsletter {
+  background-color: $background-grey;
+  text-align: center;
+  padding: 7rem 0;
+  h3 {
+    margin-bottom: 3rem;
+  }
+  form {
+    height: 3rem;
+    .ms_btn {
+      color: $white-shade;
+      height: 100%;
+      display: inline-block;
+      padding: 0.6rem 6rem;
+    }
+    input {
+      font-size: 0.7rem;
+      padding: 1rem;
+      width: 40%;
+      height: 100%;
+      margin-right: 1rem;
     }
   }
 }
