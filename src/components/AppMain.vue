@@ -12,7 +12,7 @@
     <section class="ms_news mt-4">
       <h5 class="ms_small-title mb-3">Phasellus eget metus</h5>
       <h3 class="ms_h3-title">All the latest news</h3>
-      <div class="container">
+      <div class="container ms_news-wrapper">
         <div class="row row-cols-3 gx-5">
           <div class="col">
             <img src="../assets/images/selected/post_feat_img_25-700x441.jpg" alt="">
@@ -45,6 +45,31 @@
           Read more
           <i class="fa-solid fa-angle-right"></i>
         </a>
+      </div>
+    </section>
+
+    <section class="ms_news-second">
+      <div class="container ms_news-wrapper">
+        <div class="row row-cols-3 gx-5">
+          <div class="col">
+            <img src="../assets/images/selected/post_feat_img_22-700x441.jpg" alt="">
+            <h5>Morbi vitae dui euismod vulputate siollicitudin</h5>
+            <p class="ms_small-text">October 11th, 2015 | <span>2 Comments</span></p>
+            <p class="ms_test-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem quia explicabo laboriosam inventore praesentium, a maxime.</p>
+          </div>
+          <div class="col">
+            <img src="../assets/images/selected/post_feat_img_21-700x441.jpg" alt="">
+            <h5>Vivamus pellenteque, felis quis varius</h5>
+            <p class="ms_small-text">October 11th, 2015 | Comments off</p>
+            <p class="ms_test-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem quia explicabo laboriosam inventore praesentium, a maxime.</p>
+          </div>
+          <div class="col">
+            <img src="../assets/images/selected/post_feat_img_20-700x441.jpg" alt="">
+            <h5>Donec ornare pretium erget scelisque justo</h5>
+            <p class="ms_small-text">October 11th, 2015 | Comments off</p>
+            <p class="ms_test-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem quia explicabo laboriosam inventore praesentium, a maxime.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -86,8 +111,11 @@ export default {
     margin: 3rem auto;
     background-color: $accent-color;
   }
+}
 
-  .container {
+.ms_news,
+.ms_news-second{
+  .ms_news-wrapper {
     text-align: initial;
     h5 {
       margin-top: 1.5rem;
@@ -100,6 +128,7 @@ export default {
     }
   }
 }
+
 
 .ms_featured {
   color: $white-shade;
@@ -120,5 +149,9 @@ export default {
       padding: 1rem 3rem;
     }
   }
+}
+
+.ms_news-second {
+  margin-top: 5rem;
 }
 </style>
