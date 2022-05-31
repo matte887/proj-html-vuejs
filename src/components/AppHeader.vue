@@ -19,8 +19,9 @@
           <ul
             class="d-flex align-items-center justify-content-around flex-grow-1"
           >
-            <li v-for="(item, index) in navItems" :key="index">
-              <a href="">{{ item }}</a>
+            <li v-for="(item, index) in navItems" :key="index" @click="$emit('clickEvent', index)">
+              <a>{{ item.title }}</a>
+              <div :class="!item.active ? 'd-none' : '' " class="ms_selected"></div>
             </li>
           </ul>
           <a class="ms_btn ms_dark-btn me-5" href="">Join Us</a>
@@ -48,7 +49,7 @@ export default {
   name: "AppHeader",
   props: {
     navItems: Array,
-  },
+  }
 };
 </script>
 
@@ -92,16 +93,21 @@ export default {
   }
 }
 
-header::after {
-  content: "";
-  display: inline-block;
+.ms_selected {
   width: 0;
   height: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   border-top: 13px solid $brand-primary-color;
+  position: absolute;
+  left: 38.5px;
+  transform: translate(-50%, -50%);
+  top: 68px;
+}
+
+li {
   position: relative;
-  left: 765px;
-  top: -5px;
+  width: 77px;
+  text-align: center;
 }
 </style>
