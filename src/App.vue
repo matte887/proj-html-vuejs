@@ -11,6 +11,10 @@
     <!-- Footer -->
     <AppFooter :footerItems="footerMenu" />
     <!-- /Footer -->
+
+    <a href="#app" class="ms_back-to-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
   </div>
 </template>
 
@@ -107,4 +111,19 @@ export default {
 @import "./style/common.scss";
 @import "./style/variables.scss";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+.ms_back-to-top {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  border-radius: 4px 4px 0px 0px;
+  position: fixed;
+  bottom: 0;
+  right: 75px;
+}
+
+.ms_back-to-top:hover {
+  color: white;
+}
 </style>
