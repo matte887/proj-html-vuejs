@@ -93,6 +93,7 @@ export default {
     };
   },
   methods: {
+    // Questa funzione permette di cambiare l'elemento attivo nell'header: si attiva al click di un elemento.
     changeActive(index) {
       this.headerMenu.forEach((element) => {
         element.active = false;
@@ -111,6 +112,10 @@ export default {
 @import "./style/common.scss";
 @import "./style/variables.scss";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+#app {
+  min-width: 1002px;
+}
 
 .ms_back-to-top {
   color: white;

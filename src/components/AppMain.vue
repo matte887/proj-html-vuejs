@@ -1,5 +1,7 @@
 <template>
   <main>
+    
+    <!-- section: disclaimer -->
     <section class="ms_disclaimer">
       <div class="ms_container">
         <div class="container-fluid">
@@ -12,7 +14,9 @@
         </div>
       </div>
     </section>
+    <!-- /section: disclaimer -->
 
+    <!-- section: latest news -->
     <section class="ms_news mt-4">
       <h5 class="ms_small-title mb-3">Phasellus eget metus</h5>
       <h3 class="ms_h3-title">All the latest news</h3>
@@ -62,7 +66,9 @@
         </div>
       </div>
     </section>
+    <!-- /section: latest news -->
 
+    <!-- section: featured article -->
     <section class="ms_featured">
       <div class="container">
         <h5 class="ms_small-title mb-3" id="featured-white">
@@ -80,7 +86,9 @@
         </a>
       </div>
     </section>
+    <!-- /section: featured article -->
 
+    <!-- section: more news -->
     <section class="ms_news-second">
       <div class="container ms_news-wrapper">
         <div class="row row-cols-3 gx-5">
@@ -128,7 +136,9 @@
         </div>
       </div>
     </section>
+    <!-- /section: more news -->
 
+    <!-- section: tutorials & guides -->
     <section class="ms_reviews-tutorials">
       <div class="container">
         <div class="row">
@@ -199,15 +209,19 @@
         </div>
       </div>
     </section>
+    <!-- /section: tutorials & guides -->
 
+    <!-- section: read blog -->
     <section class="ms_read-blog">
       <a class="cta">
         Read our blog
         <i class="fa-solid fa-arrow-right-long"></i>
       </a>
     </section>
+    <!-- /section: read blog -->
 
-    <section class="ms_forum-sections">ms_text-grey
+    <!-- section: forum sections -->
+    <section class="ms_forum-sections">
       <h5 class="ms_small-title mb-3">Phasellus eget metus</h5>
       <h3 class="ms_h3-title">Forum Sections</h3>
       <div class="container">
@@ -223,17 +237,21 @@
         </div>
       </div>
     </section>
+    <!-- /section: forum sections -->
 
+    <!-- section: go to forum -->
     <section class="ms_go-to-forum">
       <a class="cta">
         Go to our forum
         <i class="fa-solid fa-arrow-right-long"></i>
       </a>
     </section>
+    <!-- /section: go to forum -->
 
+    <!-- section: join community -->
     <section class="ms_join-community">
       <div class="ms_join-community-container">
-        <h2>Hey! Join to our Community</h2>
+        <h2>Hey! Join our Community</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt at
           repellendus earum beatae quasi cumque porro.
@@ -244,7 +262,9 @@
         </a>
       </div>
     </section>
+    <!-- /section: join community -->
 
+    <!-- section: subscribe to newsletter -->
     <section class="ms_join-newsletter">
       <div class="container">
         <h3>Subscribe to our Newsletter</h3>
@@ -254,6 +274,8 @@
         </form>
       </div>
     </section>
+    <!-- /section: subscribe to newsletter -->
+
   </main>
 </template>
 
@@ -306,9 +328,9 @@ export default {
 @import "../style/common.scss";
 
 .ms_disclaimer {
-  text-align: center;
   width: 100%;
   padding: 5rem;
+  text-align: center;
   background-color: $background-grey;
   .ms_container {
     width: 33%;
@@ -322,7 +344,6 @@ export default {
 
 .ms_news {
   text-align: center;
-
   h3:after {
     width: 5rem;
     height: 2px;
@@ -352,11 +373,10 @@ export default {
 // /News common style
 
 .ms_featured {
-  color: $white-shade;
   margin-top: 4rem;
+  color: $white-shade;
   .container {
     background-image: url(../assets/images/selected/featured_article_1_bg.jpg);
-
     padding: 17rem 7rem 7rem 7rem;
   }
 }
@@ -387,8 +407,8 @@ export default {
   margin: 6rem 0;
   .ms_reviewed {
     color: $white-shade;
-    background-image: url(../assets/images/selected/featured_article_2_bg.jpg);
     padding: 6rem;
+    background-image: url(../assets/images/selected/featured_article_2_bg.jpg);
   }
   .feat-title::after {
     width: 5rem;
@@ -398,7 +418,6 @@ export default {
     margin: 1.5rem 0;
     background-color: $accent-color;
   }
-
   .ms_tutorial-guides-wrapper img {
     width: 30%;
     height: auto;
@@ -408,17 +427,15 @@ export default {
 
 .ms_read-blog,
 .ms_go-to-forum {
-  color: $white-shade;
-  text-transform: uppercase;
   padding: 4rem 0;
   text-align: center;
   background-color: $background-dark;
-
+  color: $white-shade;
+  text-transform: uppercase;
   a {
     font-size: 1.2rem;
     font-weight: 700;
   }
-
   a i {
     padding: 0 1rem;
   }
@@ -428,6 +445,7 @@ export default {
   padding: 8rem 0;
   text-align: center;
   background-color: $background-grey;
+
   h3:after {
     width: 5rem;
     height: 2px;
@@ -439,23 +457,23 @@ export default {
 
   &-card {
     display: block;
-    background-color: $white-shade;
     border-top: 3px solid $brand-primary-color;
     padding: 2rem 0;
+    background-color: $white-shade;
     h4 {
       margin: 1rem 0;
     }
   }
 
   &-icon {
-    color: $white-shade;
-    font-size: 2rem;
-    background-color: $accent-color;
-    border-radius: 50%;
-    padding: 1rem;
     display: inline-block;
     width: 5rem;
     height: 5rem;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: $accent-color;
+    color: $white-shade;
+    font-size: 2rem;
   }
 }
 
@@ -489,26 +507,26 @@ export default {
 }
 
 .ms_join-newsletter {
-  background-color: $background-grey;
   text-align: center;
   padding: 7rem 0;
+  background-color: $background-grey;
   h3 {
     margin-bottom: 3rem;
   }
   form {
     height: 3rem;
     .ms_btn {
-      color: $white-shade;
-      height: 100%;
       display: inline-block;
+      height: 100%;
       padding: 0.6rem 6rem;
+      color: $white-shade;
     }
     input {
-      font-size: 0.7rem;
-      padding: 1rem;
       width: 40%;
       height: 100%;
+      padding: 1rem;
       margin-right: 1rem;
+      font-size: 0.7rem;
     }
   }
 }

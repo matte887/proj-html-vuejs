@@ -1,5 +1,6 @@
 <template>
   <div class="ms_header-container">
+    <!-- HEADER -->
     <header>
       <div
         class="
@@ -10,18 +11,31 @@
           h-100
         "
       >
+        <!-- header logo -->
         <img
           class="ms_logo"
           src="../assets/images/selected/logo-2x.png"
-          alt=""
+          alt="Avada logo"
         />
+        <!-- header logo -->
+
+        <!-- header nav -->
         <nav class="d-flex align-items-center">
           <ul
             class="d-flex align-items-center justify-content-around flex-grow-1"
           >
-            <li v-for="(item, index) in navItems" :key="index" @click="$emit('clickEvent', index)">
+            <li
+              v-for="(item, index) in navItems"
+              :key="index"
+              @click="$emit('clickEvent', index)"
+            >
               <a>{{ item.title }}</a>
-              <div :class="!item.active ? 'd-none' : '' " class="ms_selected"></div>
+              <!-- icona active -->
+              <div
+                :class="item.active ? 'ms_selected' : 'd-none'"
+              ></div>
+              <!-- /icona active -->
+
             </li>
           </ul>
           <a class="ms_btn ms_dark-btn me-5" href="">Join Us</a>
@@ -29,8 +43,12 @@
             <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
         </nav>
+        <!-- /header nav -->
       </div>
     </header>
+    <!-- /HEADER -->
+
+    <!-- JUMBOTRON -->
     <div class="ms_jumbotron d-flex align-items-center">
       <div class="container">
         <h1>Tech Forum!</h1>
@@ -41,6 +59,7 @@
         </a>
       </div>
     </div>
+    <!-- /JUMBOTRON -->
   </div>
 </template>
 
@@ -49,7 +68,7 @@ export default {
   name: "AppHeader",
   props: {
     navItems: Array,
-  }
+  },
 };
 </script>
 
@@ -71,13 +90,30 @@ export default {
       width: 70%;
       ul {
         margin-bottom: 0;
+        .ms_selected {
+          width: 0;
+          height: 0;
+          border-left: 12px solid transparent;
+          border-right: 12px solid transparent;
+          border-top: 13px solid $brand-primary-color;
+          position: absolute;
+          left: 38.5px;
+          transform: translate(-50%, -50%);
+          top: 68px;
+        }
+        
+        li {
+          position: relative;
+          width: 77px;
+          text-align: center;
+        }
       }
     }
   }
 
   .ms_jumbotron {
     width: 100%;
-    height: 75vh;
+    height: $jumbo-height;
     background-image: url(../assets/images/selected/home_slider_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -93,21 +129,4 @@ export default {
   }
 }
 
-.ms_selected {
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 13px solid $brand-primary-color;
-  position: absolute;
-  left: 38.5px;
-  transform: translate(-50%, -50%);
-  top: 68px;
-}
-
-li {
-  position: relative;
-  width: 77px;
-  text-align: center;
-}
 </style>

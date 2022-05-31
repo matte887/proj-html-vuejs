@@ -5,12 +5,13 @@
 
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap');
+
 body {
     font-family: 'Fira Sans', sans-serif;
     color: #191919;
 }
 
-// Common
+// Reset
 ul {
     list-style: none;
 }
@@ -25,6 +26,17 @@ a:hover {
     color: inherit;
 }
 
+img {
+    width: 100%;
+}
+
+// Common
+.ms_text-grey {
+    color: $text-grey;
+}
+
+
+// Components: titoli
 .ms_small-title {
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -32,37 +44,30 @@ a:hover {
     letter-spacing: .2rem;
 }
 
-.ms_small-text {
-    font-size: .8rem;
-    color: $text-grey;
-}
-
-.ms_text-grey {
-    color: $text-grey;
-}
-
 .ms_h3-title {
     font-size: 3rem;
     font-weight: 700;
 }
 
-img {
-    width: 100%;
+.ms_small-text {
+    font-size: .8rem;
+    color: $text-grey;
 }
 
-// Components
+// Components: bottoni
 .ms_btn {
-    padding: .6rem 1.2rem;
     border-radius: 2px;
     text-transform: uppercase;
     font-weight: 700;
 } 
 
 .ms_dark-btn {
+    padding: .6rem 1.2rem;
     background-color: $dividers-buttons;
 }
 
 .ms_primary-btn {
-    letter-spacing: 0.1rem;
+    padding: 1rem 2rem;
+    letter-spacing: 0.2rem;
     background-color: $brand-primary-color;
 }
