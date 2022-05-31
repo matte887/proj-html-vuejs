@@ -27,7 +27,7 @@
             <p class="ms_small-text">
               October 11th, 2015 | <span>2 Comments</span>
             </p>
-            <p class="ms_test-grey">
+            <p class="ms_text-grey">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               voluptatem quia explicabo laboriosam inventore praesentium, a
               maxime.
@@ -40,7 +40,7 @@
             />
             <h5>Vivamus pellenteque, felis quis varius</h5>
             <p class="ms_small-text">October 11th, 2015 | Comments off</p>
-            <p class="ms_test-grey">
+            <p class="ms_text-grey">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               voluptatem quia explicabo laboriosam inventore praesentium, a
               maxime.
@@ -53,7 +53,7 @@
             />
             <h5>Donec ornare pretium erget scelisque justo</h5>
             <p class="ms_small-text">October 11th, 2015 | Comments off</p>
-            <p class="ms_test-grey">
+            <p class="ms_text-grey">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               voluptatem quia explicabo laboriosam inventore praesentium, a
               maxime.
@@ -93,7 +93,7 @@
             <p class="ms_small-text">
               October 11th, 2015 | <span>2 Comments</span>
             </p>
-            <p class="ms_test-grey">
+            <p class="ms_text-grey">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               voluptatem quia explicabo laboriosam inventore praesentium, a
               maxime.
@@ -106,7 +106,7 @@
             />
             <h5>Vivamus pellenteque, felis quis varius</h5>
             <p class="ms_small-text">October 11th, 2015 | Comments off</p>
-            <p class="ms_test-grey">
+            <p class="ms_text-grey">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               voluptatem quia explicabo laboriosam inventore praesentium, a
               maxime.
@@ -119,7 +119,7 @@
             />
             <h5>Donec ornare pretium erget scelisque justo</h5>
             <p class="ms_small-text">October 11th, 2015 | Comments off</p>
-            <p class="ms_test-grey">
+            <p class="ms_text-grey">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               voluptatem quia explicabo laboriosam inventore praesentium, a
               maxime.
@@ -207,7 +207,7 @@
       </a>
     </section>
 
-    <section class="ms_forum-sections">
+    <section class="ms_forum-sections">ms_text-grey
       <h5 class="ms_small-title mb-3">Phasellus eget metus</h5>
       <h3 class="ms_h3-title">Forum Sections</h3>
       <div class="container">
