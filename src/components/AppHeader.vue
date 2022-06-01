@@ -31,11 +31,8 @@
             >
               <a>{{ item.title }}</a>
               <!-- icona active -->
-              <div
-                :class="item.active ? 'ms_selected' : 'd-none'"
-              ></div>
+              <div :class="item.active ? 'ms_selected' : 'd-none'"></div>
               <!-- /icona active -->
-
             </li>
           </ul>
           <a class="ms_btn ms_dark-btn me-5" href="">Join Us</a>
@@ -90,22 +87,20 @@ export default {
       width: 70%;
       ul {
         margin-bottom: 0;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+        }
         .ms_selected {
           width: 0;
           height: 0;
-          border-left: 12px solid transparent;
-          border-right: 12px solid transparent;
-          border-top: 13px solid $brand-primary-color;
+          border-left: 17px solid transparent;
+          border-right: 17px solid transparent;
+          border-top: 15px solid $brand-primary-color;
           position: absolute;
-          left: 38.5px;
-          transform: translate(-50%, -50%);
-          top: 68px;
-        }
-        
-        li {
-          position: relative;
-          width: 77px;
-          text-align: center;
+          top: 62px;
         }
       }
     }

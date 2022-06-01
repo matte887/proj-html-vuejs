@@ -41,24 +41,9 @@
           </div>
           <div class="col-auto">
             <ul class="d-flex">
-              <li>
-                <a class="facebook" href=""
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a class="twitter" href=""
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a class="instagram" href=""
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a class="youtube" href=""
-                  ><i class="fa-brands fa-youtube"></i
+              <li v-for="(item, index) in socialIcons" :key="index">
+                <a :class="item.anchorClass" href=""
+                  ><i :class="'fa-brands' + ' ' + item.iconClass"></i
                 ></a>
               </li>
             </ul>
@@ -76,6 +61,28 @@ export default {
   props: {
     footerItems: Array,
   },
+  data() {
+    return {
+      socialIcons: [
+        {
+          anchorClass: 'facebook',
+          iconClass: 'fa-facebook-f'
+        },
+        {
+          anchorClass: 'twitter',
+          iconClass: 'fa-twitter'
+        },
+        {
+          anchorClass: 'instagram',
+          iconClass: 'fa-instagram'
+        },
+        {
+          anchorClass: 'youtube',
+          iconClass: 'fa-youtube'
+        },
+      ]
+    }
+  }
 };
 </script>
 

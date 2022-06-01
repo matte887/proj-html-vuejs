@@ -17,7 +17,7 @@
     <!-- /section: disclaimer -->
 
     <!-- section: latest news -->
-    <section class="ms_news mt-4">
+    <section class="ms_news">
       <h5 class="ms_small-title mb-3">Phasellus eget metus</h5>
       <h3 class="ms_h3-title">All the latest news</h3>
       <div class="container ms_news-wrapper">
@@ -344,7 +344,8 @@ export default {
 
 .ms_news {
   text-align: center;
-  h3:after {
+  margin-top: 5rem;
+  h3::after {
     width: 5rem;
     height: 2px;
     content: "";
