@@ -27,7 +27,7 @@
     </div>
     <!-- /footer -->
     <hr />
-    <!-- footer bottom -->
+    <!-- page bottom -->
     <div class="ms_footer-bottom my-4">
       <div class="container">
         <div class="row align-items-center">
@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <!-- /footer bottom -->
+    <!-- /page bottom -->
   </footer>
 </template>
 
@@ -79,7 +79,7 @@ export default {
         {
           anchorClass: 'youtube',
           iconClass: 'fa-youtube'
-        },
+        }
       ]
     }
   }

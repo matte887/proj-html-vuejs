@@ -426,6 +426,7 @@ export default {
   }
 }
 
+// Go to common style
 .ms_read-blog,
 .ms_go-to-forum {
   padding: 4rem 0;
@@ -441,6 +442,7 @@ export default {
     padding: 0 1rem;
   }
 }
+// /Go to common style
 
 .ms_forum-sections {
   padding: 8rem 0;
